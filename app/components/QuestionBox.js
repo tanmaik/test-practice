@@ -22,7 +22,7 @@ const QuestionBox = ({ question, submitAnswer }) => {
       <form onSubmit={submitHandler}>
         <fieldset>
           {question.choices.map((choice) => (
-            <div className="mt-1">
+            <div className="mt-1" key={choice}>
               <input
                 type="radio"
                 defaultChecked={false}
