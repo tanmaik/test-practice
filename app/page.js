@@ -10,6 +10,7 @@ export default function Home() {
   let startingQuestion = 1;
   startingQuestion = startingQuestion - 1;
   let endingQuestion = 100;
+
   const [currentAnswers, setCurrentAnswers] = useState("");
   const [currentQuestion, setCurrentQuestion] = useState(startingQuestion);
   const nextQuestionHandler = (answer) => {
