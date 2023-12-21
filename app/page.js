@@ -107,6 +107,7 @@ export default function Home() {
             Restart
           </button>
           <AnswerComparison
+            startingQuestion={startingQuestion}
             realAnswers={answers.substring(startingQuestion, endingQuestion)}
             ourAnswers={currentAnswers}
           />

@@ -1,11 +1,11 @@
-const AnswerComparison = ({ realAnswers, ourAnswers }) => {
+const AnswerComparison = ({ realAnswers, ourAnswers, startingQuestion }) => {
   return (
     <div className="mt-10 text-xl flex justify-center">
       <table className="">
         <tr>
           {realAnswers.split("").map((answer, index) => (
             <td key={index} className="border-2 border-black font-bold px-2">
-              {index + 1}
+              {index + startingQuestion + 1}
             </td>
           ))}
         </tr>
