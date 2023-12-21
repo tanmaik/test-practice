@@ -15,14 +15,14 @@ const QuestionBox = ({ question, submitAnswer }) => {
   };
 
   return (
-    <div className="border-1 px-3 py-6 w-[30rem] ">
-      <h1 className="text-lg font-medium">
+    <div className="border-1 px-3 py-6 w-[50rem] ">
+      <h1 className="text-lg font-semibold">
         {question.question_number}. {question.question}
       </h1>
-      <form onSubmit={submitHandler}>
+      <form onSubmit={submitHandler} className="mt-4">
         <fieldset>
           {question.choices.map((choice) => (
-            <div className="mt-1" key={choice}>
+            <div className="mt-1">
               <input
                 type="radio"
                 defaultChecked={false}
