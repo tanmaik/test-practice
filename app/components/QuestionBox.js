@@ -15,7 +15,7 @@ const QuestionBox = ({ question, submitAnswer }) => {
   };
 
   return (
-    <div className="border-1 px-3 py-6 w-[50rem] ">
+    <div className="border-1 px-3 py-6 w-full sm:w-[50rem] ">
       <h1 className="text-lg font-semibold">
         {question.question_number}. {question.question}
       </h1>
