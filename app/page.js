@@ -50,8 +50,10 @@ export default function Home() {
           <button
             className="px-2 py-1 rounded-sm bg-black text-white mt-4"
             onClick={() => {
+              let sQ = parseInt(startingQuestion);
               if (startingQuestion > 0) {
-                setStartingQuestion(startingQuestion - 1);
+                setStartingQuestion(sQ - 1);
+                setCurrentQuestion(sQ - 1);
               }
               setStartedTest(true);
             }}
